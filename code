@@ -598,6 +598,7 @@ main {
 .sb-inner {
     justify-items: center;
 }
+
 .sb-container {
     gap: var(--gap2);
     padding: var(--text-margin);
@@ -634,6 +635,7 @@ main {
 .search-field input::placeholder, .search-field svg {
     color: rgba(var(--color-text), 0.5);
 }
+
 .search-field input:focus::placeholder {
     color: transparent;
 }
@@ -811,49 +813,60 @@ article .replies p,
 article .question p, .notes-container blockquote {
 	margin: var(--text-margin);
 }
+
 article ul,
 article ol {
     padding-left: var(--text-margin);
 }
+
 article h1, .poll-post .poll-question {
     font-size: 1.5em;
     font-weight: 700;
 }
+
 article h2 {
     font-size: 1.3em;
     font-weight: 700;
 }
+
 article h3 {
     font-size: 1.1em;
     font-weight: 700;
 }
+
 /*  user original  */
 .reblog-header {
     margin: var(--text-margin);
 }
+
 /*  user reblogs  */
 .reblog-header:is(:not(.original)) {
     margin: 0 0 var(--gap2) 0;
     padding: var(--text-margin) var(--text-margin) 0 var(--text-margin);
 }
+
 .reblog-header img {
     max-width: 2.5rem;
     height: auto;
     border-radius: var(--circle);
 }
+
 .reblog-header .user {
     color: rgb(var(--color-link));
     font-weight: 600;
 }
+
 .reblog-header a.user:hover {
     color: rgb(var(--color-accent));
 }
+
 span.deactivated:after {
     content:'deactivated';
     opacity:0;
     transition: all 0.2s ease;
     margin-left: 10px;
 }
+
 .reblog-header:hover span.deactivated:after {
     opacity:0.7;
 }
@@ -866,17 +879,21 @@ p:empty {
 figure.tmblr-full:is(:not(:last-of-type)) {
     margin-bottom: var(--gutter);
 }
+
 figure:is(:not(:last-of-type)) {
     margin-bottom: var(--gutter);
 }
+
 article img {
 	display: block;
 }
+
 article iframe,
 article img {
     max-width: 100%;
     height: auto;
 }
+
 .post-content div.npf_row {
     margin-bottom: calc(var(--gutter) - 4px);
 }
@@ -889,6 +906,7 @@ article img {
 .post-content div.npf_row .npf_col:last-child {
     margin-right: 0;
 }
+
 .npf_row:only-of-type,
 .npf-photos,
 .more_photoset,
@@ -898,10 +916,12 @@ article img {
     overflow:hidden;
     margin: auto;
 }
+
 .npf-photos:has(+figure) {
     border-radius: var(--photo-corners) var(--photo-corners) 0 0;
     max-width: fit-content;
 }
+
 .npf-photos + figure {
     overflow: hidden;
     border-radius: 0 0 var(--photo-corners) var(--photo-corners);
@@ -1071,6 +1091,7 @@ a.custom-like-container .liked + .custom-like-icon {
     transition: all 0.2s ease;
     display: inline-flex;    
 }
+
 .toggle-tags:hover {
     color: rgb(var(--color-accent));
 }
@@ -1084,6 +1105,7 @@ a.custom-like-container .liked + .custom-like-icon {
     overflow: hidden;
     transition: max-height 0.6s ease;
 }
+
 .tags {
     align-items: flex-end;
     margin-top: var(--gap2);
@@ -1130,9 +1152,11 @@ a.custom-like-container .liked + .custom-like-icon {
 .permalink-container, .notes-container {
     padding: var(--text-margin);
 }
+
 .permalink-container {
     {block:AskPage}display: none;{/block:AskPage}
 }
+
 .notes-container {
     margin-bottom: 0;
 }
@@ -1140,18 +1164,21 @@ a.custom-like-container .liked + .custom-like-icon {
 .permalink-container .tags-container {
     margin-top: var(--gap3);
 }
+
 span.note-counter {
     display: block;
     font-weight: 600;
     font-size: 2rem;
     margin-bottom: var(--gap3);
 }
+
 ol.notes {
     display: flex;
     gap: 2rem;
     flex-direction: column;
     padding: 0;
 }
+
 ol.notes li {
     display: grid;
     grid-template-columns: max-content 1fr;
@@ -1161,13 +1188,16 @@ ol.notes li {
     gap: var(--gap2);
     position: relative;
 }
+
 li.note.more_notes_link_container {
     grid-template-columns: 1fr;
 }
+
 a.avatar_frame {
     display: inline-flex;
     align-items: center;
 }
+
 ol.notes li img.avatar {
     max-width: 2.2em;
     height: auto;
@@ -1175,14 +1205,17 @@ ol.notes li img.avatar {
     border: 1px solid rgb(var(--borders));
     padding: 0.3rem;
 }
+
 a.more_notes_link {
     color: rgb(var(--color-text));
     display: block;
     font-weight: 500;
 }
+
 a.more_notes_link:hover {
     color: rgb(var(--color-accent));
 }
+
 .notes-container blockquote {
   grid-column: 1 / 3;
   grid-row: 2;
@@ -1204,38 +1237,46 @@ a.more_notes_link:hover {
     text-align: center;
     min-height: auto;
 }
+
 .poll-post a.poll-row:hover {
     color: rgb(var(--color-accent))!important;
     background-color: transparent!important;
 }
+
 a.poll-row p {
     margin: 0!important;
 }
+
 .poll-post .poll-see-results {
     margin-top: 0;
     margin-bottom: var(--text-margin);
 }
+
 /* -------------------------------------  POST-TYPE: quote */
 
 p.npf_quote {
     border-left: 1px solid rgb(var(--borders));
     padding-left: var(--text-margin);
 }
+
 /* -------------------------------------  POST-TYPE: ask*/
 
 .ask-container {
     border-bottom: 1px solid rgb(var(--borders));
     overflow: hidden;
 }
+
 .asker-wrap {
     margin: var(--text-margin);
     position: relative;
 }
+
 .asker-icon {
     position: absolute;
     left: 3.2rem;
     top: 1.5rem;
 }
+
 .asker-icon i {
     padding: 0.3rem;
     background-color: rgb(var(--color-accent));
@@ -1243,24 +1284,29 @@ p.npf_quote {
     border-radius: var(--circle);
     box-shadow: var(--shadow-2);
 }
+
 .asker-wrap img {
     width: 30px;
     height: 30px;
     border-radius: var(--circle);
     display: inline-flex;
 }
+
 .ask-user-info {
     gap: 0.8rem;
     flex-direction: column;
 }
+
 .ask-user-info span:first-child {
     font-weight: 700;
     text-transform: lowercase;
 }
+
 .ask-user-info a.asker,
 .ask-user-info a.answerer {
     color: rgb(var(--color-text));
 } 
+
 .ask-user-info a.asker:hover, 
 .ask-user-info a.answerer:hover {
     color: rgb(var(--color-accent));
@@ -1466,6 +1512,7 @@ div.npf-link-block {
     overflow: hidden;
     flex-direction: column;
 }
+
 div.npf-link-block .poster {
     -ms-flex-align: center;
     align-items: center;
@@ -1481,6 +1528,7 @@ div.npf-link-block .poster {
     justify-content: center;
     position: relative;
 }
+
 div.npf-link-block .title {
     font-size: 1.5em;
     line-height: var(--line-height);
@@ -1491,6 +1539,7 @@ div.npf-link-block .title {
     font-weight: 500;
     padding: var(--gap2) var(--gap2) 0;
 }
+
 div.npf-link-block .poster .title {
     color: #fff;
     font-weight: 400;
@@ -1498,11 +1547,13 @@ div.npf-link-block .poster .title {
     position: absolute;
     text-align: center;
 }
+
 div.npf-link-block .bottom {
     color: inherit;
     line-height: var(--line-height);
     padding: var(--gap2);
 }
+
 div.npf-link-block .bottom .description {
     color: inherit;
     font-size: inherit;
@@ -1513,6 +1564,7 @@ div.npf-link-block .bottom .description {
     overflow-wrap: anywhere;
     text-overflow: ellipsis;
 }
+
 div.npf-link-block .bottom .site-name {
     color: rgb(var(--color-link));
     font-size: inherit;
@@ -1532,9 +1584,11 @@ div.npf-link-block .bottom .site-name {
     top: 1.8rem;
     z-index: 99;
 }
+
 .controls {
     display: inline-flex;
 }
+
 .left-icon i {
     padding: .5rem;
     aspect-ratio: 1;
@@ -1547,6 +1601,7 @@ div.npf-link-block .bottom .site-name {
     box-shadow: var(--shadow-2);
     {/block:ifpostshadows}
 }
+
 .scroll-to-top {
     {block:ifpostouterborder}
     border: 1px solid rgb(var(--borders));
@@ -1555,9 +1610,11 @@ div.npf-link-block .bottom .site-name {
     box-shadow: var(--shadow-2);
     {/block:ifpostshadows}
 }
+
 .left-icon {
     font-size: 1.5em;
 }
+
 /* tumblr controls stuff */
 iframe.tmblr-iframe, .tmblr-iframe {
     z-index: 99!important;
@@ -1569,6 +1626,7 @@ iframe.tmblr-iframe, .tmblr-iframe {
     transform-origin: 100% 0;
     transition: all 0.3s ease;
 }
+
 .tmblr-iframe.active {
     opacity: 1;
     visibility: visible;
@@ -1582,6 +1640,7 @@ button.scroll-to-top {
     right: 2.3rem;
     position: fixed;
 }
+
 button.scroll-to-top {
     color: rgb(var(--color-text));
     cursor: default;
@@ -1589,6 +1648,7 @@ button.scroll-to-top {
     opacity: 0;
     transition: .4s;
 }
+
 button.scroll-to-top.visible {
     cursor: pointer;
     color: rgb(var(--color-text));
