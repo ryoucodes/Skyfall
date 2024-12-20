@@ -747,7 +747,7 @@ article, .permalink-container, .notes-container {
     border-bottom: 1px solid rgb(var(--borders));
     position: sticky;
     top: 0;
-    z-index: 20;
+    z-index: 2;
 }
 
 .reblog-info-image img {
