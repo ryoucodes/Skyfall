@@ -128,6 +128,7 @@ Full credits: https://sheathemes.tumblr.com/credits
 <!--✻✻✻✻✻✻  npf audio player by @glenthemes  ✻✻✻✻✻✻-->
 <script src="//tmblr-npf-audio.gitlab.io/s/init.js"></script>
 <link href="//tmblr-npf-audio.gitlab.io/s/base.css" rel="stylesheet">
+
 <script>
 tumblr_npf_audio({
     emptyTitleText: "Untitled track",
@@ -139,6 +140,7 @@ tumblr_npf_audio({
     albumLabel: "Album:"
 });
 </script>
+
 <style edit-npf-audio-player>
 .npf-audio-wrapper {
     --NPF-Audio-Buttons-Size: 2.4rem;
@@ -204,6 +206,7 @@ figcaption.audio-caption + audio[controls]{
     --round3: 1rem; 
     --circle: 100%;
 }
+
 :root, html[data-theme='light'] {
     --light-on: block;
     --light-off: none; 
@@ -221,6 +224,7 @@ figcaption.audio-caption + audio[controls]{
     --color-like:{RGBcolor:permalink like};
     --color-reblog:{RGBcolor:permalink reblog};
 }
+
 html[data-theme='dark'] {
     --light-on: none;
     --light-off: block; 
@@ -372,9 +376,6 @@ a:hover {
     color: rgb(var(--color-link-hover)); 
     transition: all 0.2s ease;
 }
-
-/* These are shorthands(?) classes I use on divs etc, so
-   I don't have to repeat myself in the CSS */
 .flex {
 	display: flex;
 }
@@ -1616,6 +1617,7 @@ div.npf-link-block .bottom .site-name {
 }
 
 /* tumblr controls stuff */
+
 iframe.tmblr-iframe, .tmblr-iframe {
     z-index: 99!important;
     opacity: 0;
@@ -1734,6 +1736,7 @@ button.scroll-to-top.visible {
 </head>
 <body>
 
+<!-- tumblr controls -->
      <div class="top-corner flex gap1 align-center">
         <button class="controls left-icon" title="tumblr controls" type="button" aria-label="open tumblr controls">
             <i class="ti ti-settings"></i>
@@ -1801,6 +1804,8 @@ button.scroll-to-top.visible {
                 {/block:iflinksix}
             </ul>
 
+            <!-- light/dark mode -->
+            
             <button class="theme-toggle" type="button" aria-label="toggle dark or light mode"> 
                 <i class="ti ti-sun light-on"></i>
                 <span class="theme-toggle-text light-on">light mode</span>
